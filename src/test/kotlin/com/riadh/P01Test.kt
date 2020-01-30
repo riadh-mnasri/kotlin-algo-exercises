@@ -9,7 +9,7 @@ class P01Test {
         // Given
         val ints = listOf(1, 1, 2, 3, 5, 8)
 
-        val listProcessor = ListProcessor()
+        val listProcessor = P01()
 
         // Then
         Assertions.assertThat(listProcessor.last(ints)).isEqualTo(8)

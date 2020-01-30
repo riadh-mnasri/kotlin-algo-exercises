@@ -1,8 +1,7 @@
 package com.riadh
 
-class ListProcessor {
+class P01 {
     fun last(ints: List<Int>): Int {
-        return 0
+        return ints.asSequence().last()
     }
-
 }
