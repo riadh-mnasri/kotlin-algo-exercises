@@ -8,9 +8,8 @@ class P08Test {
     internal fun should_return_characters_list_without_duplication() {
         // Given
         val text = "aaaabccaadeeee"
-        val characters = text.toCharArray()
 
         // Then
-        Assertions.assertThat(P08().removeConsecutiveDuplicates(characters)).isEqualTo(listOf("a", "b", "c", "a", "d", "e"))
+        Assertions.assertThat(P08().removeConsecutiveDuplicates(text.toList())).isEqualTo(listOf('a', 'b', 'c', 'a', 'd', 'e'))
     }
 }
