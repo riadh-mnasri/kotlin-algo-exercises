@@ -17,4 +17,18 @@ class RemoveDuplicatesSortedArrayTest {
         Assertions.assertThat(result).isEqualTo(2)
 
     }
+
+
+    @Test
+    internal fun `should return size 3 from 11112 array`() {
+        // Given
+        val sortedArray = arrayOf(1, 1, 1, 1, 2)
+
+        // When
+        val result = DuplicatesRemover().removeDuplicatesMoreThanTwice(sortedArray)
+
+        // Then
+        Assertions.assertThat(result).isEqualTo(3)
+
+    }
 }
